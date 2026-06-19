@@ -203,6 +203,13 @@ export default class PxContent {
         }, callback);
 
         PxContent.setDownloaded(this._page, this._id);
+
+        try {
+            const s = document.createElement("script");
+            s.textContent = 'try{document.querySelector("button.gtm-main-bookmark")?.click()}catch(e){}';
+            document.documentElement.appendChild(s);
+            s.remove();
+        } catch (ex) {}
     }
 
     static getDownloaded(page, id) {

@@ -536,7 +536,7 @@ export default class PxBackground {
     }
 
     static escape(str, flag) {
-        return str.replace(flag ? /([/?*:|"<>~\\])/g : /([/?*:|"<>~])/g, PxBackground.toFull);
+        return str.replace(/[\u200D\uFE0F\uFE0E]/g, "").replace(flag ? /([/?*:|"<>~\\])/g : /([/?*:|"<>~])/g, PxBackground.toFull);
     }
 
     static getImageElement(url) {
