@@ -21,11 +21,7 @@
 
 ## インストール
 
-### Firefox（AMO から）
-
-[addons.mozilla.org](https://addons.mozilla.org/) で「Px Downloader Fixed」を検索
-
-### Firefox（手動）
+### Firefox
 
 1. [Releases](https://github.com/dekotan24/px-downloader/releases) から `.xpi` をダウンロード
 2. Firefox で `about:addons` を開き、歯車アイコン → 「ファイルからアドオンをインストール」
